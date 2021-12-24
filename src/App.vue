@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { mapActions } from 'vuex';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  methods: mapActions(['startTimer']),
+  created(){  
+    this.startTimer();
   }
 }
 </script>
 
 <style>
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#2c3e50;
+  color: aliceblue;
+  height: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
 }
 </style>
