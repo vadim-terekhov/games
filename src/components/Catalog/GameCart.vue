@@ -76,5 +76,6 @@ export default {
 .game-cart-btn:hover{
   cursor: pointer;
   border-radius: 7px;
+  background-color:rgb(0, 77, 77);
 }
 </style>

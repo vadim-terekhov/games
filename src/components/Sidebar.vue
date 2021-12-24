@@ -90,5 +90,6 @@ export default {
 .sidebar-logout:hover{
   cursor: pointer;
   border-radius: 7px;
+   background-color:rgb(104, 27, 27);
 }
 </style>
